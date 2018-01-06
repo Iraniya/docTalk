@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00C379B20013FAA00B38D3E /* SDWebImage in Resources */ = {isa = PBXBuildFile; fileRef = B00C379A20013FAA00B38D3E /* SDWebImage */; };
 		B0D600042001179300E43E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D600022001179300E43E61 /* Main.storyboard */; };
 		B0D600062001179300E43E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D600052001179300E43E61 /* Assets.xcassets */; };
 		B0D600092001179300E43E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D600072001179300E43E61 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00C379A20013FAA00B38D3E /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDWebImage; sourceTree = "<group>"; };
 		B0D600032001179300E43E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0D600052001179300E43E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D600082001179300E43E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				B0D6001020011A2600E43E61 /* DocTalkHomeViewController.h */,
 				B0D6001120011A2600E43E61 /* DocTalkHomeViewController.m */,
+				B00C379A20013FAA00B38D3E /* SDWebImage */,
 				B0D6001820011A8600E43E61 /* Cell */,
 				B0D6001C2001347700E43E61 /* Utility */,
 				B0D6FFF92001179300E43E61 /* Supporting Files */,
@@ -170,6 +173,7 @@
 				B0D6001720011A8200E43E61 /* DocTalkSingleUserTableViewCell.xib in Resources */,
 				B0D600062001179300E43E61 /* Assets.xcassets in Resources */,
 				B0D600042001179300E43E61 /* Main.storyboard in Resources */,
+				B00C379B20013FAA00B38D3E /* SDWebImage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +336,7 @@
 				B0D6000F2001179300E43E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0D6FFF12001179300E43E61 /* Build configuration list for PBXProject "docTalkTask" */ = {
 			isa = XCConfigurationList;

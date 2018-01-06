@@ -25,16 +25,16 @@
                             <constraint firstAttribute="width" constant="50" id="evw-xA-JFe"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-js-yvi">
-                        <rect key="frame" x="65" y="40" width="86" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-js-yvi">
+                        <rect key="frame" x="65" y="50.5" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="mGd-js-yvi" firstAttribute="centerY" secondItem="Xw0-UF-1IX" secondAttribute="centerY" id="8cp-dm-5B6"/>
                     <constraint firstItem="Xw0-UF-1IX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IFk-ON-BRY"/>
-                    <constraint firstItem="mGd-js-yvi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mWM-RM-dG7"/>
                     <constraint firstItem="Xw0-UF-1IX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ue6-ko-QQX"/>
                     <constraint firstItem="mGd-js-yvi" firstAttribute="leading" secondItem="Xw0-UF-1IX" secondAttribute="trailing" constant="10" id="wkN-ar-tyM"/>
                 </constraints>

@@ -9,6 +9,7 @@
 #import "DocTalkHomeViewController.h"
 #import "DocTalkSingleUserTableViewCell.h"
 #import "NSRUtilities.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 @interface DocTalkHomeViewController ()<UITextFieldDelegate, UITableViewDataSource, UITabBarDelegate>
 
@@ -73,18 +74,24 @@
         if ([dataArr count]>0) {
             weakSelf.userList = [[NSArray alloc]initWithArray:dataArr];
         }
-        [weakSelf.loadingActivityIndicater stopAnimating];
-        [weakSelf.loadingActivityIndicater setHidden:YES];
         
-        if ([weakSelf.userList count] > 0) {
-            [weakSelf.noDataFoundLabel setHidden:YES];
-            [weakSelf.userListDisplayTableView setHidden:NO];
-            [weakSelf.userListDisplayTableView reloadData];
-        }
-        else {
-            [weakSelf.userListDisplayTableView setHidden:YES];
-            [weakSelf.noDataFoundLabel setHidden:NO];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.loadingActivityIndicater stopAnimating];
+            [weakSelf.loadingActivityIndicater setHidden:YES];
+            
+            if ([weakSelf.userList count] > 0) {
+                [weakSelf.noDataFoundLabel setHidden:YES];
+                [weakSelf.userListDisplayTableView setHidden:NO];
+                [weakSelf.userListDisplayTableView reloadData];
+            }
+            else {
+                [weakSelf.userListDisplayTableView setHidden:YES];
+                [weakSelf.noDataFoundLabel setHidden:NO];
+            }
+        });
+        
+        
+        
 
     }] resume];
 }
@@ -135,14 +142,21 @@
     cell.userName.text = [singleUser objectForKey:@"html_url"];
     
     
-    NSString* userAvatar = [singleUser objectForKey:@"avatar_url"];
+    NSString* userAvatar = [NSString stringWithFormat:@"%@",[singleUser objectForKey:@"avatar_url"]];
+    
     
 //    if ([NSRUtilities isNilOREmptyString:userAvatar] == NO) {
-//        [cell.userImageView setShowActivityIndicatorView:YES];
-//        [cell.userImageView setIndicatorStyle:UIActivityIndicatorViewStyleGray];
-//        [cell.userImageView sd_setImageWithURL:[NSURL URLWithString:iconUrl] placeholderImage:[UIImage imageNamed:@"app_icon.png" ] options:SDWebImageContinueInBackground];
+//        
+//        @try {
+//            [cell.userImageView sd_setImageWithURL:[NSURL URLWithString:userAvatar]];
+//        } @catch (NSException *exception) {
+//            
+//        } @finally {
+//            
+//        }
+//        
 //    }
-//    
+    
     return cell;
 }
 
