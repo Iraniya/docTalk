@@ -46,7 +46,15 @@ class ViewController: UIViewController {
             .bind(to: tableView.rx.items) { tableView, row, user in
                 let cell:customCell = self.tableView.dequeueReusableCell(withIdentifier: "Cell") as! customCell
                 cell.id.text = user.login
-                cell.name.text = user.avatar_url
+                cell.name.text = user.url
+                let userImageURL = URL(string: user.avatar_url)!
+                let data = try? Data(contentsOf: userImageURL)
+                
+                if let imageData = data {
+                    let image = UIImage(data: imageData)
+                    cell.photo?.image = image
+                }
+                //cell.imageView =
                 return cell
             }
             .disposed(by: bag)
