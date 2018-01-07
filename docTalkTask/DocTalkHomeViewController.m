@@ -90,9 +90,6 @@
             }
         });
         
-        
-        
-
     }] resume];
 }
 
@@ -121,58 +118,57 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     return 100;
 }
 
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"cellIdentifier";
-    DocTalkSingleUserTableViewCell *cell = (DocTalkSingleUserTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        NSArray *nib;
-       nib = [[NSBundle mainBundle] loadNibNamed:@"DocTalkSingleUserTableViewCell" owner:self options:nil];
-        
-        cell = [nib objectAtIndex:0];
+    
+    static NSString *cellIdentifier = @"cellIdentifier";
+    
+    DocTalkSingleUserTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cell = [[DocTalkSingleUserTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    NSDictionary *singleUser = [self.userList objectAtIndex:indexPath.row];
+    NSDictionary *singleUser = [[NSDictionary alloc]initWithDictionary:[self.userList objectAtIndex:indexPath.row]];
     
-    cell.userName.text = [singleUser objectForKey:@"html_url"];
+    cell.userUrl.text = [NSString stringWithFormat:@"%@",[singleUser objectForKey:@"html_url"]];
     
     
     NSString* userAvatar = [NSString stringWithFormat:@"%@",[singleUser objectForKey:@"avatar_url"]];
     
+    if ([NSRUtilities isNilOREmptyString:userAvatar] == NO) {
+        [cell.userImageView sd_setImageWithURL:[NSURL URLWithString:userAvatar] placeholderImage:[UIImage imageNamed:@"avatar"] options:SDWebImageContinueInBackground];
+    }
     
-//    if ([NSRUtilities isNilOREmptyString:userAvatar] == NO) {
-//        
-//        @try {
-//            [cell.userImageView sd_setImageWithURL:[NSURL URLWithString:userAvatar]];
-//        } @catch (NSException *exception) {
-//            
-//        } @finally {
-//            
-//        }
-//        
-//    }
-    
+    NSString *userScore = [NSString stringWithFormat:@"%@",[singleUser objectForKey:@"score"]];
+    cell.scoreLabel.text = userScore;
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.userSearchTextField resignFirstResponder];
+}
+
 
 #pragma mark - textFied Delegate
 
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     
     if ([NSRUtilities isNilOREmptyString:newString] == NO) {
          [self apiCallForSearchUser:newString];
     }
-   
+    else {
+        [self.userListDisplayTableView setHidden:YES];
+        [self.noDataFoundLabel setHidden:NO];
+    }
     
-    return YES;
+   return YES;
 }
 
 

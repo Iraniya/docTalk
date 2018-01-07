@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface DocTalkSingleUserTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
+@property (weak, nonatomic) IBOutlet UILabel *userUrl;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end

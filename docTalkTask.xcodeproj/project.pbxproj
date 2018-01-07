@@ -17,9 +17,11 @@
 		B0D6001B200127D800E43E61 /* NSRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6001A200127D800E43E61 /* NSRUtilities.m */; };
 		B0D6FFFB2001179300E43E61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6FFFA2001179300E43E61 /* main.m */; };
 		B0D6FFFE2001179300E43E61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6FFFD2001179300E43E61 /* AppDelegate.m */; };
+		BB5CC831AA258F67A9558852 /* libPods-docTalkTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1368355C902CFD1B0DEFEFD /* libPods-docTalkTask.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		097A5A96924CF822E5964B61 /* Pods-docTalkTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-docTalkTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask.release.xcconfig"; sourceTree = "<group>"; };
 		B00C379A20013FAA00B38D3E /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDWebImage; sourceTree = "<group>"; };
 		B0D600032001179300E43E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0D600052001179300E43E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		B0D6FFFA2001179300E43E61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0D6FFFC2001179300E43E61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0D6FFFD2001179300E43E61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7B68B53A74D6A818D865E38 /* Pods-docTalkTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-docTalkTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask.debug.xcconfig"; sourceTree = "<group>"; };
+		E1368355C902CFD1B0DEFEFD /* libPods-docTalkTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-docTalkTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5CC831AA258F67A9558852 /* libPods-docTalkTask.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A5ABB4BD891DAE0BB0D3D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1368355C902CFD1B0DEFEFD /* libPods-docTalkTask.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1A39A379621FBA76858BB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7B68B53A74D6A818D865E38 /* Pods-docTalkTask.debug.xcconfig */,
+				097A5A96924CF822E5964B61 /* Pods-docTalkTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B0D6001820011A8600E43E61 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +95,8 @@
 			children = (
 				B0D6FFF82001179300E43E61 /* docTalkTask */,
 				B0D6FFF72001179300E43E61 /* Products */,
+				AB1A39A379621FBA76858BB6 /* Pods */,
+				9A5ABB4BD891DAE0BB0D3D27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,10 @@
 			children = (
 				B0D6001020011A2600E43E61 /* DocTalkHomeViewController.h */,
 				B0D6001120011A2600E43E61 /* DocTalkHomeViewController.m */,
-				B00C379A20013FAA00B38D3E /* SDWebImage */,
+				B0D600022001179300E43E61 /* Main.storyboard */,
 				B0D6001820011A8600E43E61 /* Cell */,
 				B0D6001C2001347700E43E61 /* Utility */,
+				B00C379A20013FAA00B38D3E /* SDWebImage */,
 				B0D6FFF92001179300E43E61 /* Supporting Files */,
 			);
 			path = docTalkTask;
@@ -103,7 +128,6 @@
 				B0D6000A2001179300E43E61 /* Info.plist */,
 				B0D6FFFC2001179300E43E61 /* AppDelegate.h */,
 				B0D6FFFD2001179300E43E61 /* AppDelegate.m */,
-				B0D600022001179300E43E61 /* Main.storyboard */,
 				B0D600052001179300E43E61 /* Assets.xcassets */,
 				B0D600072001179300E43E61 /* LaunchScreen.storyboard */,
 				B0D6FFFA2001179300E43E61 /* main.m */,
@@ -118,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D6000D2001179300E43E61 /* Build configuration list for PBXNativeTarget "docTalkTask" */;
 			buildPhases = (
+				4B7791A4CBF8EADC358B3B5D /* [CP] Check Pods Manifest.lock */,
 				B0D6FFF22001179300E43E61 /* Sources */,
 				B0D6FFF32001179300E43E61 /* Frameworks */,
 				B0D6FFF42001179300E43E61 /* Resources */,
+				961BCC8A225B9826CCF95D31 /* [CP] Embed Pods Frameworks */,
+				B0C73E51CBC24F50F64CC97B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +205,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B7791A4CBF8EADC358B3B5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-docTalkTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961BCC8A225B9826CCF95D31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C73E51CBC24F50F64CC97B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0D6FFF22001179300E43E61 /* Sources */ = {
@@ -306,6 +384,7 @@
 		};
 		B0D6000E2001179300E43E61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B68B53A74D6A818D865E38 /* Pods-docTalkTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = docTalkTask/Info.plist;
@@ -317,6 +396,7 @@
 		};
 		B0D6000F2001179300E43E61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097A5A96924CF822E5964B61 /* Pods-docTalkTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = docTalkTask/Info.plist;
