@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00C379B20013FAA00B38D3E /* SDWebImage in Resources */ = {isa = PBXBuildFile; fileRef = B00C379A20013FAA00B38D3E /* SDWebImage */; };
+		B0D600042001179300E43E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D600022001179300E43E61 /* Main.storyboard */; };
+		B0D600062001179300E43E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D600052001179300E43E61 /* Assets.xcassets */; };
+		B0D600092001179300E43E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D600072001179300E43E61 /* LaunchScreen.storyboard */; };
+		B0D6001220011A2600E43E61 /* DocTalkHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6001120011A2600E43E61 /* DocTalkHomeViewController.m */; };
+		B0D6001620011A8200E43E61 /* DocTalkSingleUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6001420011A8200E43E61 /* DocTalkSingleUserTableViewCell.m */; };
+		B0D6001720011A8200E43E61 /* DocTalkSingleUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D6001520011A8200E43E61 /* DocTalkSingleUserTableViewCell.xib */; };
+		B0D6001B200127D800E43E61 /* NSRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6001A200127D800E43E61 /* NSRUtilities.m */; };
+		B0D6FFFB2001179300E43E61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6FFFA2001179300E43E61 /* main.m */; };
+		B0D6FFFE2001179300E43E61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D6FFFD2001179300E43E61 /* AppDelegate.m */; };
+		BB5CC831AA258F67A9558852 /* libPods-docTalkTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1368355C902CFD1B0DEFEFD /* libPods-docTalkTask.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		097A5A96924CF822E5964B61 /* Pods-docTalkTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-docTalkTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask.release.xcconfig"; sourceTree = "<group>"; };
+		B00C379A20013FAA00B38D3E /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDWebImage; sourceTree = "<group>"; };
+		B0D600032001179300E43E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0D600052001179300E43E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0D600082001179300E43E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0D6000A2001179300E43E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D6001020011A2600E43E61 /* DocTalkHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocTalkHomeViewController.h; sourceTree = "<group>"; };
+		B0D6001120011A2600E43E61 /* DocTalkHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocTalkHomeViewController.m; sourceTree = "<group>"; };
+		B0D6001320011A8200E43E61 /* DocTalkSingleUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocTalkSingleUserTableViewCell.h; sourceTree = "<group>"; };
+		B0D6001420011A8200E43E61 /* DocTalkSingleUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocTalkSingleUserTableViewCell.m; sourceTree = "<group>"; };
+		B0D6001520011A8200E43E61 /* DocTalkSingleUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocTalkSingleUserTableViewCell.xib; sourceTree = "<group>"; };
+		B0D60019200127D800E43E61 /* NSRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRUtilities.h; sourceTree = "<group>"; };
+		B0D6001A200127D800E43E61 /* NSRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRUtilities.m; sourceTree = "<group>"; };
+		B0D6FFF62001179300E43E61 /* docTalkTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = docTalkTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D6FFFA2001179300E43E61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0D6FFFC2001179300E43E61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0D6FFFD2001179300E43E61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7B68B53A74D6A818D865E38 /* Pods-docTalkTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-docTalkTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask.debug.xcconfig"; sourceTree = "<group>"; };
+		E1368355C902CFD1B0DEFEFD /* libPods-docTalkTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-docTalkTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0D6FFF32001179300E43E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5CC831AA258F67A9558852 /* libPods-docTalkTask.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A5ABB4BD891DAE0BB0D3D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1368355C902CFD1B0DEFEFD /* libPods-docTalkTask.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1A39A379621FBA76858BB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7B68B53A74D6A818D865E38 /* Pods-docTalkTask.debug.xcconfig */,
+				097A5A96924CF822E5964B61 /* Pods-docTalkTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0D6001820011A8600E43E61 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B0D6001320011A8200E43E61 /* DocTalkSingleUserTableViewCell.h */,
+				B0D6001420011A8200E43E61 /* DocTalkSingleUserTableViewCell.m */,
+				B0D6001520011A8200E43E61 /* DocTalkSingleUserTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		B0D6001C2001347700E43E61 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B0D60019200127D800E43E61 /* NSRUtilities.h */,
+				B0D6001A200127D800E43E61 /* NSRUtilities.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		B0D6FFED2001179300E43E61 = {
+			isa = PBXGroup;
+			children = (
+				B0D6FFF82001179300E43E61 /* docTalkTask */,
+				B0D6FFF72001179300E43E61 /* Products */,
+				AB1A39A379621FBA76858BB6 /* Pods */,
+				9A5ABB4BD891DAE0BB0D3D27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0D6FFF72001179300E43E61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0D6FFF62001179300E43E61 /* docTalkTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0D6FFF82001179300E43E61 /* docTalkTask */ = {
+			isa = PBXGroup;
+			children = (
+				B0D6001020011A2600E43E61 /* DocTalkHomeViewController.h */,
+				B0D6001120011A2600E43E61 /* DocTalkHomeViewController.m */,
+				B0D600022001179300E43E61 /* Main.storyboard */,
+				B0D6001820011A8600E43E61 /* Cell */,
+				B0D6001C2001347700E43E61 /* Utility */,
+				B00C379A20013FAA00B38D3E /* SDWebImage */,
+				B0D6FFF92001179300E43E61 /* Supporting Files */,
+			);
+			path = docTalkTask;
+			sourceTree = "<group>";
+		};
+		B0D6FFF92001179300E43E61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0D6000A2001179300E43E61 /* Info.plist */,
+				B0D6FFFC2001179300E43E61 /* AppDelegate.h */,
+				B0D6FFFD2001179300E43E61 /* AppDelegate.m */,
+				B0D600052001179300E43E61 /* Assets.xcassets */,
+				B0D600072001179300E43E61 /* LaunchScreen.storyboard */,
+				B0D6FFFA2001179300E43E61 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0D6FFF52001179300E43E61 /* docTalkTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D6000D2001179300E43E61 /* Build configuration list for PBXNativeTarget "docTalkTask" */;
+			buildPhases = (
+				4B7791A4CBF8EADC358B3B5D /* [CP] Check Pods Manifest.lock */,
+				B0D6FFF22001179300E43E61 /* Sources */,
+				B0D6FFF32001179300E43E61 /* Frameworks */,
+				B0D6FFF42001179300E43E61 /* Resources */,
+				961BCC8A225B9826CCF95D31 /* [CP] Embed Pods Frameworks */,
+				B0C73E51CBC24F50F64CC97B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = docTalkTask;
+			productName = docTalkTask;
+			productReference = B0D6FFF62001179300E43E61 /* docTalkTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0D6FFEE2001179300E43E61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = iraniya;
+				TargetAttributes = {
+					B0D6FFF52001179300E43E61 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B0D6FFF12001179300E43E61 /* Build configuration list for PBXProject "docTalkTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0D6FFED2001179300E43E61;
+			productRefGroup = B0D6FFF72001179300E43E61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0D6FFF52001179300E43E61 /* docTalkTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0D6FFF42001179300E43E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D600092001179300E43E61 /* LaunchScreen.storyboard in Resources */,
+				B0D6001720011A8200E43E61 /* DocTalkSingleUserTableViewCell.xib in Resources */,
+				B0D600062001179300E43E61 /* Assets.xcassets in Resources */,
+				B0D600042001179300E43E61 /* Main.storyboard in Resources */,
+				B00C379B20013FAA00B38D3E /* SDWebImage in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B7791A4CBF8EADC358B3B5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-docTalkTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961BCC8A225B9826CCF95D31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C73E51CBC24F50F64CC97B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-docTalkTask/Pods-docTalkTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0D6FFF22001179300E43E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D6FFFE2001179300E43E61 /* AppDelegate.m in Sources */,
+				B0D6001220011A2600E43E61 /* DocTalkHomeViewController.m in Sources */,
+				B0D6001620011A8200E43E61 /* DocTalkSingleUserTableViewCell.m in Sources */,
+				B0D6001B200127D800E43E61 /* NSRUtilities.m in Sources */,
+				B0D6FFFB2001179300E43E61 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0D600022001179300E43E61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D600032001179300E43E61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0D600072001179300E43E61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D600082001179300E43E61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0D6000B2001179300E43E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0D6000C2001179300E43E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0D6000E2001179300E43E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B68B53A74D6A818D865E38 /* Pods-docTalkTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = docTalkTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iraniya.docTalkTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0D6000F2001179300E43E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097A5A96924CF822E5964B61 /* Pods-docTalkTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = docTalkTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iraniya.docTalkTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0D6000D2001179300E43E61 /* Build configuration list for PBXNativeTarget "docTalkTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D6000E2001179300E43E61 /* Debug */,
+				B0D6000F2001179300E43E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0D6FFF12001179300E43E61 /* Build configuration list for PBXProject "docTalkTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D6000B2001179300E43E61 /* Debug */,
+				B0D6000C2001179300E43E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0D6FFEE2001179300E43E61 /* Project object */;
+}

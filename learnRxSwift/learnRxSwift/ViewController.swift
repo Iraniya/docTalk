@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SDWebImage
 
 class ViewController: UIViewController {
 
@@ -48,13 +49,7 @@ class ViewController: UIViewController {
                 cell.id.text = user.login
                 cell.name.text = user.url
                 let userImageURL = URL(string: user.avatar_url)!
-                let data = try? Data(contentsOf: userImageURL)
-                
-                if let imageData = data {
-                    let image = UIImage(data: imageData)
-                    cell.photo?.image = image
-                }
-                //cell.imageView =
+                cell.photo.sd_setImage(with: userImageURL);
                 return cell
             }
             .disposed(by: bag)
